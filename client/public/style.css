@@ -1,0 +1,103 @@
+html ,body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
+}
+
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 3.2fr;
+}
+
+.side-profile {
+    background-color: #E6E6FA;
+    display: grid;
+    grid-template-columns: 1.7fr 1.5fr;
+}
+
+.side-profile-content {
+    /* background-color: rgb(178, 210, 247); */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1.25fr 3fr 2fr;
+}
+
+.profile-picture {
+    padding: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.picture-border {
+    background-color: white;
+    border: 1px solid white;
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+}
+
+.side-nav-tabs {
+    background-color:  #E6E6FA;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
+
+}
+
+.side-nav-tabs button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 22px;
+}
+
+.side-nav-tabs button:hover {
+    background-color: #FA8072;
+    color: white;
+}
+
+.nav-link {
+    align-self: center;
+    justify-self: center;
+}
+
+.social-media {
+    /* background-color: beige; */
+}
+
+.profile-content{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.display-content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1.5fr 5fr 1fr;
+    padding: 0px 30px;
+}
+
+.personal-state {
+    background-color: aliceblue;
+    /* padding: 10px 25px 5px; */
+}
+
+.current-content {
+    /* background-color: rgb(136, 190, 236); */
+}
+
+.profile-footer {
+    /* background-color: aliceblue; */
+}
