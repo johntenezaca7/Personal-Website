@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SocialIcon } from 'react-social-icons'
 import Home from './components/home';
 import Applications from './components/applications';
 import Blog from './components/blog';
@@ -67,34 +68,41 @@ class App extends Component {
             <div className="profile-picture">
               <div className="picture-border"></div>
             </div>
-            <div className="side-nav-tabs">
-              <button className="nav-link" value="home" onClick={this.onClick}>Home</button>
-              <button className="nav-link" value="applications" onClick={this.onClick}>Applications</button>
-              <button className="nav-link" value="blog" onClick={this.onClick}>Blog</button>
-              <button className="nav-link" value="resume" onClick={this.onClick}>Resume</button>
-              <button className="nav-link" value="contact" onClick={this.onClick}>Contact</button>
-            </div>
-            <div className="social-media">
-            </div>
+            <div className="personal-state">
+                
+                <h4>John Tenezaca</h4>
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                
+              </div>
+              <div className="social-media-icons">
+                <SocialIcon network="linkedin" color="#FA8072" style={{ height: 30, width: 30 }} className="social-media" />
+                <SocialIcon network="github" color="#FA8072" style={{ height: 30, width: 30 }}   className="social-media"/>
+                <SocialIcon network="medium" color="#FA8072" style={{ height: 30, width: 30 }}   className="social-media"/>
+                <SocialIcon network="google" color="#FA8072" style={{ height: 30, width: 30 }}   className="social-media"/>
+                <SocialIcon network="twitter" color="#FA8072" style={{ height: 30, width: 30 }}   className="social-media"/>             
+              </div>   
           </div>
         </div>
         <div className="profile-content ">
             <div className="display-content">
-              <div className="personal-state">
-                <h1>John Tenezaca</h1>
-                <p>
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                   ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                   voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+              <div className="content-nav">
+                <button className="nav-link" value="home" onClick={this.onClick}>Home</button>
+                <button className="nav-link" value="applications" onClick={this.onClick}>Applications</button>
+                <button className="nav-link" value="blog" onClick={this.onClick}>Blog</button>
+                <button className="nav-link" value="resume" onClick={this.onClick}>Resume</button>
+                <button className="nav-link" value="contact" onClick={this.onClick}>Contact</button>
               </div>
               <div className="current-content">
                 {this.renderContent()}
               </div>
-              <div className="profile-footer"></div>
+      
             </div>
         </div>
       </div>
