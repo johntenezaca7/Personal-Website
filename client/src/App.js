@@ -4,7 +4,8 @@ import Home from './components/home';
 import Applications from './components/applications';
 import Blog from './components/blog';
 import Resume from './components/resume';
-import Contact from './components/contact';
+
+
 
 
 class App extends Component {
@@ -27,12 +28,15 @@ class App extends Component {
       case 'home':
         return(
           <div>
+            <h1>Domain Knowledge</h1>
+            <br />
             <Home />
             </div>
         );
       case 'applications':
         return(
-          <div>
+          <div >
+            <h1>Applications</h1>
             <Applications />
           </div>
         );
@@ -48,12 +52,7 @@ class App extends Component {
             <Resume />
           </div>
         );
-      case 'contact':
-        return(
-          <div>
-            <Contact />
-          </div>
-        );
+   
       default:
         return;
     }
@@ -66,11 +65,16 @@ class App extends Component {
           <div></div> 
           <div className="side-profile-content">
             <div className="profile-picture">
-              <div className="picture-border"></div>
+              <div className="picture-border">
+              <img className="picture-border"src="https://firebasestorage.googleapis.com/v0/b/gigem-185b4.appspot.com/o/images%2F928e3b82-fe06-48b3-86b1-db14c255e11d.jpg?alt=media&token=8b745e9a-f3a7-40af-8bae-69a53484ec15" alt="profile" />
+              </div>
+              <div className="name-status">
+                  <h4>John Tenezaca</h4>
+                  <h5>Full Stack Javascript Software Engineer </h5>
+              </div>
             </div>
             <div className="personal-state">
-                
-                <h4>John Tenezaca</h4>
+                <div className="personal-mes">
                   <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -79,14 +83,14 @@ class App extends Component {
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                   </p>
-                
+                  </div>
               </div>
               <div className="social-media-icons">
-                <SocialIcon network="linkedin" color="#FA8072" style={{ height: 30, width: 30 }} className="social-media" />
-                <SocialIcon network="github" color="#FA8072" style={{ height: 30, width: 30 }}   className="social-media"/>
-                <SocialIcon network="medium" color="#FA8072" style={{ height: 30, width: 30 }}   className="social-media"/>
-                <SocialIcon network="google" color="#FA8072" style={{ height: 30, width: 30 }}   className="social-media"/>
-                <SocialIcon network="twitter" color="#FA8072" style={{ height: 30, width: 30 }}   className="social-media"/>             
+                <SocialIcon network="linkedin" color="white" style={{ height: 30, width: 30 }} className="social-media" />
+                <SocialIcon network="github" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
+                <SocialIcon network="medium" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
+                <SocialIcon network="google" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
+                <SocialIcon network="twitter" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>             
               </div>   
           </div>
         </div>
@@ -94,10 +98,10 @@ class App extends Component {
             <div className="display-content">
               <div className="content-nav">
                 <button className="nav-link" value="home" onClick={this.onClick}>Home</button>
-                <button className="nav-link" value="applications" onClick={this.onClick}>Applications</button>
-                <button className="nav-link" value="blog" onClick={this.onClick}>Blog</button>
                 <button className="nav-link" value="resume" onClick={this.onClick}>Resume</button>
-                <button className="nav-link" value="contact" onClick={this.onClick}>Contact</button>
+                <button className="nav-link" value="blog" onClick={this.onClick}>Blog</button>
+                <button className="nav-link" value="applications" onClick={this.onClick}>Applications</button>               
+      
               </div>
               <div className="current-content">
                 {this.renderContent()}

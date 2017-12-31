@@ -1,43 +1,72 @@
-html ,body {
+
+html{
+    min-width: 100%;
+    min-height: 100%;
+} 
+
+body {
+    background-image: url('https://static.pexels.com/photos/23760/rocket-launch-space-discovery.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    object-fit: cover;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    /* margin: 0;
-    padding: 0; 
-    height: 100%; 
-    width: 100%;  */
+    box-sizing: border-box;
+    width: 100%;
+    height: 800px;
+  
+}
+
+a {
+    color: black
+}
+a:hover {
+    text-decoration: none;
+    color: white
+}
+
+h3 {
+    text-align: center;
 }
 
 
 .main-wrapper {
     display: grid;
-    grid-template-columns: 1.5fr 3.2fr;
+    grid-template-columns: 1.5fr 3fr;
+  
 }
 
 .side-profile {
-    background-color: #E6E6FA;
+
+
     display: grid;
-    grid-template-columns: 1.7fr 1.5fr;
+    grid-template-columns: 1fr 1.5fr;
+    
 }
 
 .side-profile-content {
-    /* background-color: rgb(178, 210, 247); */
+    background-color: rgba(211,211,211, 0.3);
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1.25fr 2fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr;
 }
 
 .profile-picture {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 10%;
     padding: 20px;
-    align-self: center;
-    justify-self: center;
+    padding-top: 30px;
+  
+    
 }
 
 .picture-border {
     background-color: white;
     border: 1px solid white;
-    height: 160px;
-    width: 160px;
+    height: 110px;
+    width: 110px;
     border-radius: 100%;
+    justify-self: center;
 }
 
 .social-media {
@@ -52,10 +81,13 @@ html ,body {
 
 
 .profile-content{
+    /* background-color: rgb(195,212,223); */
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr .5fr;
     align-items: stretch;
     height: 100vh;
+
+ 
 }
 
 .display-content {
@@ -63,56 +95,151 @@ html ,body {
     grid-template-columns: auto;
     grid-template-rows: 10% 60%;
     padding: 0px 30px;
+   
 }
 
 .content-nav {
+    background-color: rgba(211,211,211, 0.3);
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+    height: 40px;
+
 }
 
-.content-nav button {
+.nav-link {
     display: block;
     background-color: inherit;
     color: black;
-    width: 100%;
-    height: 50px;
     border: none;
     outline: none;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 15px;
+ 
 }
 
-.content-nav button:hover {
-    background-color: #FA8072;
+.nav-link:hover {
+    background-color: rgba(211,211,211, 0.6);
     color: white;
 }
 
 .personal-state {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 20% 30%;
+    /* grid-template-rows:  */
     grid-gap: 1em;
 
 }
 
-.personal-state h4 {
-    background-color: rgb(255, 188, 188);
-    font-size: 30px;
+.name-status h4 {
+    background-color: rgba(195,212,223, 0.6);
+    font-size: 20px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 100;
+    color: black;
 }
 
-.personal-state p {
-    padding-right: 10px;
+.name-status h5 {
+    background-color: rgba(195,212,223, 0.6);
+    padding: 1px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 100;
+    color: black;
 }
 
-.current-content {
-    /* background-color: rgb(136, 190, 236); */
+
+
+
+.personal-mes p {
+    background-color:rgba(195,212,223, 0.7);
+    padding: 10px;
+    color: black
 }
 
-.profile-footer {
-    /* background-color: aliceblue; */
+
+
+
+/*  Home Component */
+
+
+.accordion {
+    background-color: rgba(211,211,211, 0.3);
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    /* height: 100px; */
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
+
+.active, .accordion:hover {
+    background-color:rgba(211,211,211, 0.6);
+    color: white;
+}
+
+.panel {
+    padding: 0 18px;
+    color: white;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+.card-block{
+    color: white;
+}
+
+/* End of Home Component */
+
+/* Application Component */
+.app-list{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.your-weath, .moovi, .gigem{
+    background-color: rgb(244, 244, 244);
+    color: #444;
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+.app-image{
+    border: 5px solid white;
+    height: 150px;
+    border-radius: 5%;
+}
+
+
+/* End of Application Component */
+
+
+
+/* Resume*/
+
+.resume-layout{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.resume-layout div {
+    background-color: rgb(244, 244, 244);
+    color: #444;
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+/* End of Resume*/

@@ -4,7 +4,27 @@ class Applications extends Component {
     render(){
         return(
             <div>
-                <h1>Applications</h1>
+               <div className="app-list">
+                    <div className="your-weath"> 
+                        <div className="app-image">Box </div>
+                        <div>
+                            <h1>YourM</h1>
+                        </div>
+
+                    </div>
+                    <div className="moovi">
+                    <div className="app-image">Box </div>
+                        <div>
+                            <h1>YourM</h1>
+                        </div>
+                    </div>
+                    <div className="gigem">
+                    <div className="app-image">Box </div>
+                        <div>
+                            <h1>YourM</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
