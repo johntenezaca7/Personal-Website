@@ -69,7 +69,10 @@ class App extends Component {
               <img className="picture-border"src="https://firebasestorage.googleapis.com/v0/b/gigem-185b4.appspot.com/o/images%2F928e3b82-fe06-48b3-86b1-db14c255e11d.jpg?alt=media&token=8b745e9a-f3a7-40af-8bae-69a53484ec15" alt="profile" />
               </div>
               <div className="name-status">
-                  <h4>John Tenezaca</h4>
+                  <h4>John Tenezaca 
+                  <p>New York City, NY</p>
+                  </h4>
+                  
                   <h5>Full Stack Javascript Software Engineer </h5>
               </div>
             </div>
