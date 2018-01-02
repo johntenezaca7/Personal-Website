@@ -55,7 +55,7 @@ class Home extends Component {
                     <div className="card-header" role="tab" id="headingFour">
                     <h5 className="mb-0">
                         <a className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <h3>System Architecture</h3>
+                        <h3>NoSQL / SQL Databases</h3>
                         </a>
                     </h5>
                     </div>
@@ -69,7 +69,7 @@ class Home extends Component {
                     <div className="card-header" role="tab" id="headingFive">
                     <h5 className="mb-0">
                         <a className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <h3>Something Else</h3>
+                        <h3>System Architecture</h3>
                         </a>
                     </h5>
                     </div>

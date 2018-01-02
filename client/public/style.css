@@ -5,9 +5,10 @@ html{
 } 
 
 body {
-    background-image: url('https://static.pexels.com/photos/23760/rocket-launch-space-discovery.jpg');
+    background-image: url('https://images.pexels.com/photos/23764/pexels-photo.jpg');
     background-size: cover;
-    background-position: 50% 30%;
+    background-attachment: fixed;
+    background-position: 50% (-5%);
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     width: 100%;
@@ -56,7 +57,7 @@ h3 , h1 {
     grid-template-columns: auto;
     grid-template-rows: 50% 10%;
     padding: 20px;
-    padding-top: 30px;
+    padding-top: 45px;
   
     
 }
@@ -146,7 +147,7 @@ h3 , h1 {
 
 .name-status p {
     /* background-color: rgba(195,212,223, 0.6); */
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     font-weight: 100;
     color: white;
@@ -168,9 +169,23 @@ h3 , h1 {
 .personal-mes p {
     background-color:rgba(195,212,223, 0.7);
     padding: 10px;
-    color: black
+    color: rgb(36, 36, 36);
+    font-size: 15px;
 }
 
+.tech-nar {
+    background-color:rgba(195,212,223, 1);
+    padding: 10px;
+    color: rgb(36, 36, 36);
+    font-size: 17px;
+}
+
+.highlight {
+    color: white;
+}
+
+#tab { display:inline-block; 
+    margin-left: 40px; }
 
 
 

@@ -4,7 +4,7 @@ import Home from './components/home';
 import Applications from './components/applications';
 import Blog from './components/blog';
 import Resume from './components/resume';
-
+import AboutMe from './components/aboutMe';
 
 
 
@@ -52,7 +52,10 @@ class App extends Component {
             <Resume />
           </div>
         );
-   
+      case 'about-me':
+        return(
+          <AboutMe />
+        );
       default:
         return;
     }
@@ -79,21 +82,27 @@ class App extends Component {
             <div className="personal-state">
                 <div className="personal-mes">
                   <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    Hello! My name is John and I am a <span className="highlight">Full Stack Javascript Engineer!</span> I
+                     have passion for building intuitive, interactive and invaluable web applications. <br/>
+                    Technologies that I have used are but not limited to :
+                            <ul>
+                              <li><span className="highlight">MongoDB/MySQL</span></li>
+                              <li><span className="highlight">Node.js/Express</span></li>
+                              <li><span className="highlight">React</span></li>
+                            </ul>
+                
+                    Feel free to contact me at: <span className="highlight">johntenezaca7@gmail.com</span>
+
+
                   </p>
                   </div>
               </div>
               <div className="social-media-icons">
-                <SocialIcon network="linkedin" color="white" style={{ height: 30, width: 30 }} className="social-media" />
-                <SocialIcon network="github" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
-                <SocialIcon network="medium" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
-                <SocialIcon network="google" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
-                <SocialIcon network="twitter" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>             
+                <SocialIcon network="linkedin" url="https://linkedin.com/in/jtenez" color="white" style={{ height: 30, width: 30 }} className="social-media" />
+                <SocialIcon network="github"  url=" https://github.com/johntenezaca7" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
+                {/* <SocialIcon network="medium" color="white" style={{ height: 30, width: 30 }}   className="social-media"/> */}
+                <SocialIcon network="google"  url=" https://plus.google.com/u/0/102071269308724801257" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
+                <SocialIcon network="twitter" url="https://twitter.com/john_tenezaca" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>             
               </div>   
           </div>
         </div>
@@ -101,15 +110,14 @@ class App extends Component {
             <div className="display-content">
               <div className="content-nav">
                 <button className="nav-link" value="home" onClick={this.onClick}>Home</button>
+                <button className="nav-link" value="about-me" onClick={this.onClick}>About Me</button>
                 <button className="nav-link" value="resume" onClick={this.onClick}>Resume</button>
-                <button className="nav-link" value="blog" onClick={this.onClick}>Blog</button>
+                {/* <button className="nav-link" value="blog" onClick={this.onClick}>Blog</button> */}
                 <button className="nav-link" value="applications" onClick={this.onClick}>Applications</button>               
-      
               </div>
               <div className="current-content">
                 {this.renderContent()}
-              </div>
-      
+              </div>``
             </div>
         </div>
       </div>
