@@ -174,8 +174,10 @@ h3 , h1 {
 }
 
 .tech-nar {
-    background-color:rgba(195,212,223, 1);
-    padding: 10px;
+    background-color:rgba(195,212,223, .9);
+    padding: 25px;
+    padding-left: 130px;
+    padding-right: 130px;
     color: rgb(36, 36, 36);
     font-size: 17px;
 }

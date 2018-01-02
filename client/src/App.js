@@ -83,7 +83,7 @@ class App extends Component {
                 <div className="personal-mes">
                   <p>
                     Hello! My name is John and I am a <span className="highlight">Full Stack Javascript Engineer!</span> I
-                     have passion for building intuitive, interactive and invaluable web applications. <br/>
+                     have a passion for building intuitive, interactive and invaluable web applications. <br/>
                     Technologies that I have used are but not limited to :
                             <ul>
                               <li><span className="highlight">MongoDB/MySQL</span></li>
@@ -91,7 +91,7 @@ class App extends Component {
                               <li><span className="highlight">React</span></li>
                             </ul>
                 
-                    Feel free to contact me at: <span className="highlight">johntenezaca7@gmail.com</span>
+                    Contact me at: <span className="highlight">johntenezaca7@gmail.com</span>
 
 
                   </p>
