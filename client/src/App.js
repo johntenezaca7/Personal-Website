@@ -37,6 +37,7 @@ class App extends Component {
         return(
           <div >
             <h1>Applications</h1>
+            <br />
             <Applications />
           </div>
         );
@@ -49,12 +50,18 @@ class App extends Component {
       case 'resume':
         return(
           <div>
+            <h1>Resume</h1>
+            <br />
             <Resume />
           </div>
         );
       case 'about-me':
         return(
+          <div>
+             <h1>About Me</h1>
+             <br/>
           <AboutMe />
+          </div>
         );
       default:
         return;
@@ -82,7 +89,7 @@ class App extends Component {
             <div className="personal-state">
                 <div className="personal-mes">
                   <p>
-                    Hello! My name is John and I am a <span className="highlight">Full Stack Javascript Engineer!</span> I
+                    Hello! My name is John and I am a <span className="highlight">Full Stack Engineer!</span> I
                      have a passion for building intuitive, interactive and invaluable web applications. 
                     Technologies that I have worked with are but not limited to: 
                               <br />

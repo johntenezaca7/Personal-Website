@@ -4,7 +4,6 @@ const AboutMe = () => {
     
         return(
             <div className="about-me">
-            <h1>About Me</h1>
             <p className="tech-nar"><span id="tab">Alongside</span>  my passion for creativity, I’ve also had an inclination towards figuring out how things worked behind the scenes.
              It was this coursity that led me towards building my own instruments, repairing audio equipment and now, building full stack web applications.<br />
             <span id="tab">I've</span> built applications that use either a NoSQL database or a SQL database, depending on the need for flexibility or reliability. For the back-end,

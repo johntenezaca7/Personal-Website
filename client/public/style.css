@@ -176,7 +176,7 @@ h3 , h1 {
 .personal-mes p {
     background-color:rgba(195,212,223, 0.7);
     padding: 10px;
-    color: rgb(36, 36, 36);
+    color: rgb(9, 9, 9);
     font-size: 15px;
 }
 
@@ -202,7 +202,7 @@ h3 , h1 {
 
 
 .accordion {
-    background-color: rgba(211,211,211, 0.3);
+    background-color: rgba(211,211,211, 0.6);
     color: #444;
     cursor: pointer;
     padding: 10px;
@@ -227,7 +227,7 @@ h3 , h1 {
     transition: max-height 0.2s ease-out;
 }
 .card-block{
-    color: white;
+    color: black;
 }
 
 /* End of Home Component */
@@ -241,19 +241,51 @@ h3 , h1 {
 }
 
 .your-weath, .moovi, .gigem{
-    background-color: rgb(244, 244, 244);
+    background-color: rgba(171, 171, 171, 0.8);
     color: #444;
     padding: 10px;
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr 3fr;
+    
 }
 
 
-.app-image{
-    border: 5px solid white;
-    height: 150px;
-    border-radius: 5%;
+
+.gif-el img{
+    position:relative;
+    width: 280px;
+    height: 200px;
+    transition: all .2s ease-in-out;
+}
+.gif-el img:hover { transform: scale(1.2); }
+
+.app-text h3{
+    margin-top: 0px;
+    text-align: left;
+    padding-left: 10px;
+    color: black;
+}
+
+.app-text h4{
+  
+    text-align: left;
+    padding-left: 10px;
+    font-size: 17px;
+    color: black;
+}
+
+.app-text h5{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+
+.app-text p {
+    color: black;
+    padding-left: 10px;
 }
 
 
@@ -266,27 +298,47 @@ h3 , h1 {
 .resume-layout{
     display:grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1em;
+    grid-template-rows: auto;
+   
 }
 
-.resume-layout div {
-    background-color: rgb(244, 244, 244);
+.res-content {
+    background-color: rgba(195,212,223, 0.9);
     color: #444;
-    padding: 10px;
+    padding-top: 10px;
+    padding: 25px;
+    padding-top: 0px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: auto;
 }
-/* End of Resume*/
+.res-content h3 {
+    text-align: left;
+    color: rgb(47, 45, 45);
+}
+
+.res-content h4{
+    color: black;
+    padding-left: 20px;
+}
+.res-content h5 {
+    padding-left: 30px;
+    color: black
+}
+
+
 
 /* Responsive */
- @media  (max-width: 850px){
-     /* body{
-         box-sizing: border-box;
-         
+@media (max-width: 1200px){
+    .tech-nar {
+    
+        padding-left: 50px;
+        padding-right: 50px;
+       
+    }
 
-     } */
+}
+ @media  (max-width: 850px){
 
      h1 {
         font-size: 45px;
@@ -343,7 +395,7 @@ h3 , h1 {
     .display-content {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto;
+    
         padding: 0px;
 
     }
@@ -369,6 +421,17 @@ h3 , h1 {
      .social-media-icons {
          margin-top: 20px;
      }
+    
+     .res-content h3 {
+        font-size: 25px;
+    }
+    
+    .res-content h4{
+        font-size: 16px;
+    }
+    .res-content h5 {
+        font-size: 17px;
+    }
 
      .personal-mes p {
         background-color:rgba(195,212,223, 0.7);
@@ -383,6 +446,18 @@ h3 , h1 {
     .tech-nar{
         padding: 25px;
         font-size: 18px;
+    }
+
+    .gigem {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+    .gif-el{
+        justify-self: center;
+        position:relative;
+        width: 280px;
+        height: 200px;
     }
  }
 /* End *?

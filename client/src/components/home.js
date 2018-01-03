@@ -1,12 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Home extends Component {
-  
-
-    render(){
-
-        return(
-            
+const Home = () => {  
+      return(
             <div id="accordion"  role="tablist" aria-multiselectable="true" >
                 <div className="card accordion">
                     <div className="card-header" role="tab" id="headingOne">
@@ -83,6 +78,5 @@ class Home extends Component {
             
         )
     }
-}
 
 export default Home;
