@@ -76,21 +76,21 @@ class App extends Component {
                   <p>New York City, NY</p>
                   </h4>
                   
-                  <h5>Full Stack Javascript Software Engineer </h5>
+                  <h5>Full Stack Software Engineer </h5>
               </div>
             </div>
             <div className="personal-state">
                 <div className="personal-mes">
                   <p>
                     Hello! My name is John and I am a <span className="highlight">Full Stack Javascript Engineer!</span> I
-                     have a passion for building intuitive, interactive and invaluable web applications. <br/>
-                    Technologies that I have used are but not limited to :
-                            <ul>
-                              <li><span className="highlight">MongoDB/MySQL</span></li>
-                              <li><span className="highlight">Node.js/Express</span></li>
-                              <li><span className="highlight">React</span></li>
-                            </ul>
-                
+                     have a passion for building intuitive, interactive and invaluable web applications. 
+                    Technologies that I have worked with are but not limited to: 
+                              <br />
+                              <span id="tab" className="highlight">React</span><br />
+                              <span  id="tab" className="highlight">Node.js/Express</span><br />
+                              <span  id="tab" className="highlight">MongoDB/MySQL/FireBase</span><br />
+                            
+                                            
                     Contact me at: <span className="highlight">johntenezaca7@gmail.com</span>
 
 
@@ -98,11 +98,11 @@ class App extends Component {
                   </div>
               </div>
               <div className="social-media-icons">
-                <SocialIcon network="linkedin" url="https://linkedin.com/in/jtenez" color="white" style={{ height: 30, width: 30 }} className="social-media" />
-                <SocialIcon network="github"  url=" https://github.com/johntenezaca7" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
+                <SocialIcon network="linkedin" url="https://linkedin.com/in/jtenez" color="white" style={{ height: 45, width: 45 }} className="social-media" />
+                <SocialIcon network="github"  url=" https://github.com/johntenezaca7" color="white" style={{ height: 45, width: 45 }}   className="social-media"/>
                 {/* <SocialIcon network="medium" color="white" style={{ height: 30, width: 30 }}   className="social-media"/> */}
-                <SocialIcon network="google"  url=" https://plus.google.com/u/0/102071269308724801257" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>
-                <SocialIcon network="twitter" url="https://twitter.com/john_tenezaca" color="white" style={{ height: 30, width: 30 }}   className="social-media"/>             
+                <SocialIcon network="google"  url=" https://plus.google.com/u/0/102071269308724801257" color="white" style={{ height: 45, width: 45 }}   className="social-media"/>
+                <SocialIcon network="twitter" url="https://twitter.com/john_tenezaca" color="white" style={{ height: 45, width: 45 }}   className="social-media"/>             
               </div>   
           </div>
         </div>
