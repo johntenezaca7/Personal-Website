@@ -277,7 +277,7 @@ h3 , h1 {
 /* End of Resume*/
 
 /* Responsive */
- @media(max-width: 500px){
+ @media(max-width: 700px){
 
      h1 {
         font-size: 45px;
