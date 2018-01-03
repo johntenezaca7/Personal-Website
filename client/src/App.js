@@ -110,7 +110,7 @@ class App extends Component {
             <div className="display-content">
               <div className="content-nav">
                 <button className="nav-link" value="home" onClick={this.onClick}>Home</button>
-                <button className="nav-link" value="about-me" onClick={this.onClick}>About Me</button>
+                <button className="nav-link" value="about-me" onClick={this.onClick}>About</button>
                 <button className="nav-link" value="resume" onClick={this.onClick}>Resume</button>
                 {/* <button className="nav-link" value="blog" onClick={this.onClick}>Blog</button> */}
                 <button className="nav-link" value="applications" onClick={this.onClick}>Applications</button>               
