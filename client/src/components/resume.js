@@ -3,6 +3,8 @@ import React from 'react';
 const Resume = () => {
         return(
             <div className="resume-layout" >
+            <h1>Resume</h1>
+            <br />
               <div className="res-content">
                 <div className="res-skills">
                     <h3>Skills</h3>
@@ -24,7 +26,7 @@ const Resume = () => {
                         <h4>Hack Reactor</h4> 
                         <h5>Advanced  Software Engineering Immersive </h5>
                         <h4>CUNY City college of Technology</h4>
-                        <h5>Eletrical Engineering AS  2015 </h5>
+                        <h5>Electrical Engineering AS  2015 </h5>
                     </div>
                 </div>
               </div>

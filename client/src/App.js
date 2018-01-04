@@ -35,8 +35,6 @@ class App extends Component {
       case 'resume':
         return(
           <div>
-            <h1>Resume</h1>
-            <br />
             <Resume />
           </div>
         );

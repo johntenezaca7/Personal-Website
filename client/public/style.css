@@ -39,6 +39,8 @@ h3, h1 {
     text-align: center;
     font-weight: 100;
     color: white;
+   
+    text-shadow: 0px 0px 5px rgba(186, 186, 186, 0.3);
 }
 
 .name-status p {
@@ -47,6 +49,8 @@ h3, h1 {
     text-align: center;
     font-weight: 100;
     color: white;
+
+    text-shadow: 0px 0px 5px rgba(186, 186, 186, 0.3);
 }
 
 .name-status h5 {
@@ -54,11 +58,13 @@ h3, h1 {
     text-align: center;
   
     color: white;
+    text-shadow: 0px 0px 5px rgba(186, 186, 186, 0.3);
 }
 
 .img-holder {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;     
+    grid-template-columns: 1fr 1fr 1fr;   
+    text-shadow: 0px 0px 16px rgba(0,0,0, .8);  
 }
 
 .pic-border{
@@ -68,6 +74,7 @@ height: 112px;
 width:115px;
 border-radius: 100%;
 justify-self: center;
+text-shadow: 0px 0px 16px rgba(0,0,0, .8);
 }
 
 .picture {
@@ -75,20 +82,22 @@ justify-self: center;
     width:110px;
     border-radius: 100%;
     justify-self: center;
-   
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.9);
 }
 
 
 .social-media{
        text-align: center;
        align-self: start;
+      
    }
 
 .social-media-icon {
     text-align: center;
     margin: 5px;
     margin-top: 20px;
-  
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.9);
+    border-radius: 100%
    }
 
 /*  End Landing -------------------------------------*/
@@ -161,7 +170,13 @@ justify-self: center;
 .about-me {
     position: relative;
     top: 5%;
-    padding: 2%;
+    padding: 20%;
+    line-height: 1.7;
+}
+
+.about-me h1 {
+    font-size: 65px;
+    text-shadow: 0px 0px 50px rgba(0,0,0, .9);
 }
 
 .tech-nar {
@@ -169,6 +184,7 @@ justify-self: center;
     padding: 3%;
     color: rgb(9, 9, 9);
     font-size: 20px;
+    text-shadow: 0px 0px 16px rgba(0,0,0, .5);
 }
 
 .contact {
