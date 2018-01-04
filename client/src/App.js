@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { SocialIcon } from 'react-social-icons'
-import Home from './components/home';
 import Applications from './components/applications';
-import Blog from './components/blog';
 import Resume from './components/resume';
 import AboutMe from './components/aboutMe';
 
@@ -12,7 +10,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      nav: 'home'
+      nav: 'resume'
     }
     this.onClick = this.onClick.bind(this);
   }
@@ -25,26 +23,13 @@ class App extends Component {
 
   renderContent(){
     switch(this.state.nav) {
-      case 'home':
-        return(
-          <div>
-            <h1>Domain Knowledge</h1>
-            <br />
-            <Home />
-            </div>
-        );
+    
       case 'applications':
         return(
           <div >
             <h1>Applications</h1>
             <br />
             <Applications />
-          </div>
-        );
-      case 'blog':
-        return(
-          <div>
-            <Blog />
           </div>
         );
       case 'resume':
@@ -55,77 +40,67 @@ class App extends Component {
             <Resume />
           </div>
         );
-      case 'about-me':
-        return(
-          <div>
-             <h1>About Me</h1>
-             <br/>
-          <AboutMe />
-          </div>
-        );
+
       default:
         return;
     }
   }
 
+  /*
+
+
+              <div className="social-media-icons">
+                <SocialIcon network="linkedin" url="https://linkedin.com/in/jtenez" color="white" style={{ height: 45, width: 45 }} className="social-media" />
+                <SocialIcon network="github"  url=" https://github.com/johntenezaca7" color="white" style={{ height: 45, width: 45 }}   className="social-media"/>
+                 <SocialIcon network="medium" color="white" style={{ height: 30, width: 30 }}   className="social-media"/> 
+                <SocialIcon network="google"  url=" https://plus.google.com/u/0/102071269308724801257" color="white" style={{ height: 45, width: 45 }}   className="social-media"/>
+                <SocialIcon network="twitter" url="https://twitter.com/john_tenezaca" color="white" style={{ height: 45, width: 45 }}   className="social-media"/>             
+              </div>  
+  */
+
   render() {
     return (
       <div className="main-wrapper">
-        <div className="side-profile">
-          <div></div> 
-          <div className="side-profile-content">
-            <div className="profile-picture">
-              <div className="picture-border">
-              <img className="picture-border"src="https://firebasestorage.googleapis.com/v0/b/gigem-185b4.appspot.com/o/images%2F928e3b82-fe06-48b3-86b1-db14c255e11d.jpg?alt=media&token=8b745e9a-f3a7-40af-8bae-69a53484ec15" alt="profile" />
-              </div>
+        <div className="landing">
+           <span className="profile">
               <div className="name-status">
                   <h4>John Tenezaca 
                   <p>New York City, NY</p>
                   </h4>
-                  
                   <h5>Full Stack Software Engineer </h5>
-              </div>
-            </div>
-            <div className="personal-state">
-                <div className="personal-mes">
-                  <p>
-                    Hello! My name is John and I am a <span className="highlight">Full Stack Engineer!</span> I
-                     have a passion for building intuitive, interactive and invaluable web applications. 
-                    Technologies that I have worked with are but not limited to: 
-                              <br />
-                              <span id="tab" className="highlight">React</span><br />
-                              <span  id="tab" className="highlight">Node.js/Express</span><br />
-                              <span  id="tab" className="highlight">MongoDB/MySQL/FireBase</span><br />
-                            
-                                            
-                    Contact me at: <span className="highlight">johntenezaca7@gmail.com</span>
-
-
-                  </p>
+                  <div className="img-holder">
+                    <span></span>
+                    <div className="pic-border">
+                      <img className="picture"src="https://firebasestorage.googleapis.com/v0/b/gigem-185b4.appspot.com/o/images%2F928e3b82-fe06-48b3-86b1-db14c255e11d.jpg?alt=media&token=8b745e9a-f3a7-40af-8bae-69a53484ec15" alt="profile" />
+                    </div>
+                    <span></span>
                   </div>
+                  <div className="social-media">
+                    <SocialIcon network="linkedin" url="https://linkedin.com/in/jtenez" color="white" style={{ height: 45, width: 45 }} className="social-media-icon" />
+                    <SocialIcon network="github"  url=" https://github.com/johntenezaca7" color="white" style={{ height: 45, width: 45 }}   className="social-media-icon"/>
+                    <SocialIcon network="google"  url=" https://plus.google.com/u/0/102071269308724801257" color="white" style={{ height: 45, width: 45 }}   className="social-media-icon"/>
+                    <SocialIcon network="twitter" url="https://twitter.com/john_tenezaca" color="white" style={{ height: 45, width: 45 }}   className="social-media-icon"/>             
+                   </div>  
               </div>
-              <div className="social-media-icons">
-                <SocialIcon network="linkedin" url="https://linkedin.com/in/jtenez" color="white" style={{ height: 45, width: 45 }} className="social-media" />
-                <SocialIcon network="github"  url=" https://github.com/johntenezaca7" color="white" style={{ height: 45, width: 45 }}   className="social-media"/>
-                {/* <SocialIcon network="medium" color="white" style={{ height: 30, width: 30 }}   className="social-media"/> */}
-                <SocialIcon network="google"  url=" https://plus.google.com/u/0/102071269308724801257" color="white" style={{ height: 45, width: 45 }}   className="social-media"/>
-                <SocialIcon network="twitter" url="https://twitter.com/john_tenezaca" color="white" style={{ height: 45, width: 45 }}   className="social-media"/>             
-              </div>   
-          </div>
+          </span>
         </div>
-        <div className="profile-content ">
-            <div className="display-content">
+        <div className="between">
+        <div className="display-content">
               <div className="content-nav">
-                <button className="nav-link" value="home" onClick={this.onClick}>Home</button>
-                <button className="nav-link" value="about-me" onClick={this.onClick}>About</button>
                 <button className="nav-link" value="resume" onClick={this.onClick}>Resume</button>
-                {/* <button className="nav-link" value="blog" onClick={this.onClick}>Blog</button> */}
                 <button className="nav-link" value="applications" onClick={this.onClick}>Applications</button>               
               </div>
               <div className="current-content">
                 {this.renderContent()}
               </div>``
             </div>
+          </div>
+        <div className="profile-content ">
+          <div className="about-me">
+          <h1>About Me</h1>
+            <br />
+            <AboutMe /> 
+           </div>
         </div>
       </div>
     );

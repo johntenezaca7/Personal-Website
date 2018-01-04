@@ -1,107 +1,108 @@
 
-html{
-    min-width: 100%;
-    min-height: 100%;
-} 
-
-body {
-    box-sizing: border-box;
-    background-image: url('https://images.pexels.com/photos/23764/pexels-photo.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 0%;
+body, html {
     font-family: 'Raleway', sans-serif;
-    width: 100%;
-    height: 800px;
+    margin: 0;
+    height: 100%;
   
 }
 
-a {
-    color: black
-}
-a:hover {
-    text-decoration: none;
-    color: white
-}
-
-h3 , h1 {
+h3, h1 {
     text-align: center;
     color: white;
 }
 
-
-
-
-.main-wrapper {
-    display: grid;
-    grid-template-columns: 1.5fr 3fr;
+/* Landing -------------------------------------*/
+.landing {
+     background-image: url('https://wallpaperstudio10.com/static/wpdb/wallpapers/1920x1080/175813.jpg');
+     background-position: bottom;
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat: no-repeat;
+     min-height: 100vh;
+     text-align: center;
     
+}
+
+.profile {
+    position: absolute;
+    top: 10%;
+}
+
+.name-status h4 {
+   
+    padding-top: 5%;
+    padding-bottom: .5%;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 100;
+    color: white;
+}
+
+.name-status p {
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+    color: white;
+}
+
+.name-status h5 {
+    font-size: 30px;
+    text-align: center;
   
+    color: white;
 }
 
-
-.side-profile {
-
-
+.img-holder {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    
+    grid-template-columns: 1fr 1fr 1fr;     
 }
 
-.side-profile-content {
-    background-color: rgba(211,211,211, 0.3);
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows:  .5fr 1fr .3fr;
-    /* align-self: start; */
+.pic-border{
+border: 1px solid rgba(255, 255, 255, 0.5);
+background-color: rgba(255, 255, 255, 0.5);
+height: 112px;
+width:115px;
+border-radius: 100%;
+justify-self: center;
 }
 
-.profile-picture {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50% 10%;
-    padding: 20px;
-    padding-top: 45px;
-  
-    
-}
-
-.picture-border {
-    background-color: white;
-    border: 1px solid white;
+.picture {
     height: 110px;
-    width: 110px;
+    width:110px;
     border-radius: 100%;
     justify-self: center;
+   
 }
 
-.social-media {
-    
- text-align: center;
- margin: 5px;
- margin-top: 20px;
-}
 
-.social-media-icons{
-  
+.social-media{
+       text-align: center;
+       align-self: start;
+   }
+
+.social-media-icon {
     text-align: center;
-    align-self: start;
-    /* height: 50px;
-    width: 50px;
-    float: right; */
-}
+    margin: 5px;
+    margin-top: 20px;
+  
+   }
 
+/*  End Landing -------------------------------------*/
 
-.profile-content{
-    /* background-color: rgb(195,212,223); */
+/* between -------------------------------------*/
+
+.between {
+    background-image: url('https://cdn.allwallpaper.in/wallpapers/2880x1800/8593/vector-rocket-space-2880x1800-wallpaper.jpg');
+    background-position:bottom; 
+    background-attachment: fixed;
+    background-size: cover;
     display: grid;
-    grid-template-columns: 4fr .5fr;
+    grid-template-columns: auto;
     align-items: stretch;
-    height: 100vh;
+    min-height: 100vh;
 
- 
 }
-
 .display-content {
     display: grid;
     grid-template-columns: auto;
@@ -111,11 +112,13 @@ h3 , h1 {
 }
 
 .content-nav {
-    background-color: rgba(211,211,211, 0.3);
+    /* background-color: rgba(211,211,211, 0.3); */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 10px;
-    height: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em;
+    width: 20%;
+    margin-top: 2%;
+    height: 40%;
 
 }
 
@@ -128,109 +131,62 @@ h3 , h1 {
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 30px;
  
 }
 
 .nav-link:hover {
-    background-color: rgba(211,211,211, 0.6);
+    font-size: 40px;
     color: white;
 }
 
-.personal-state {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 1em;
+/* End Between -------------------------------------*/
 
-}
-
-.name-status h4 {
-    background-color: rgba(195,212,223, 0.6);
-    padding-top: 5px;
-    padding-bottom: .5px;
-    font-size: 24px;
-    text-align: center;
-    font-weight: 100;
-    color: white;
-}
-
-.name-status p {
-    /* background-color: rgba(195,212,223, 0.6); */
-    font-size: 12px;
-    text-align: center;
-    font-weight: 100;
-    color: white;
-}
-
-.name-status h5 {
-    background-color: rgba(195,212,223, 0.6);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 15px;
-    text-align: center;
+/*  Profile  -------------------------------------*/
+.profile-content{
   
-    color: white;
+   position: relative;
+    background-image: url('https://i.pinimg.com/originals/71/40/2e/71402efb341bbeaaef7b69d019dd2d18.jpg');
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+ 
 }
 
-
-.personal-mes p {
-    background-color:rgba(195,212,223, 0.7);
-    padding: 10px;
-    color: rgb(9, 9, 9);
-    font-size: 15px;
+.about-me {
+    position: relative;
+    top: 5%;
+    padding: 2%;
 }
 
 .tech-nar {
     background-color:rgba(195,212,223, .9);
-    padding: 25px;
-    padding-left: 130px;
-    padding-right: 130px;
-    color: rgb(36, 36, 36);
-    font-size: 17px;
+    padding: 3%;
+    color: rgb(9, 9, 9);
+    font-size: 20px;
 }
 
-.highlight {
-    color: white;
+.contact {
+    font-size: 20px;
+    transition: font-size .5s;
 }
+.contact:hover {
+    font-size: 25px;
+}
+
+
+
+
+
+
 
 #tab { display:inline-block; 
     margin-left: 40px; }
 
+/* End Profile -------------------------------------*/
 
-
-/*  Home Component */
-
-
-.accordion {
-    background-color: rgba(211,211,211, 0.6);
-    color: #444;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    /* height: 100px; */
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color:rgba(211,211,211, 0.6);
-    color: white;
-}
-
-.panel {
-    padding: 0 18px;
-    color: white;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
-}
-.card-block{
-    color: black;
-}
-
-/* End of Home Component */
 
 /* Application Component */
 .app-list{
@@ -244,7 +200,6 @@ h3 , h1 {
     background-color: rgba(171, 171, 171, 0.8);
     color: #444;
     padding: 10px;
-    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr 3fr;
     
@@ -254,7 +209,7 @@ h3 , h1 {
 
 .gif-el img{
     position:relative;
-    width: 280px;
+    width: 85%;
     height: 200px;
     transition: all .2s ease-in-out;
 }
@@ -305,159 +260,133 @@ h3 , h1 {
 .res-content {
     background-color: rgba(195,212,223, 0.9);
     color: #444;
-    padding-top: 10px;
-    padding: 25px;
-    padding-top: 0px;
-    width: 100%;
+    padding: 2%;
+    padding-top: 0%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: auto;
 }
 .res-content h3 {
     text-align: left;
     color: rgb(47, 45, 45);
+    font-size: 28px;
 }
 
 .res-content h4{
     color: black;
-    padding-left: 20px;
+    padding-left: 2%;
+    font-size: 24px;
 }
 .res-content h5 {
-    padding-left: 30px;
-    color: black
+    padding-left: 2%;
+    color: black;
+    font-size: 20px;
 }
 
 
 
 /* Responsive */
-@media (max-width: 1200px){
-    .tech-nar {
+
+ @media  (max-width: 850px){
+     body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-color: black;
+      
+     }
+   
+     .profile-content{
+         position: initial;
+         /* top: 2%;
+         left:20%; */
+     }
     
-        padding-left: 50px;
-        padding-right: 50px;
+    .about-me{
+        position: relative;
        
     }
-
-}
- @media  (max-width: 850px){
-
-     h1 {
-        font-size: 45px;
+    .nav-link {
+        display: block;
+        background-color: inherit;
+        color: white;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 15px;
+     
     }
-
-    h3 {
+    .nav-link:hover {
         font-size: 30px;
+        color: white;
     }
-
-    .main-wrapper{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr; 
-        justify-self: center;
-        margin-top: 20px;
-    }
-
-    .profile-content{
-        display: grid;
-        grid-template-columns: auto;
-    }
-
-    .picture-border {
-        background-color: white;
-        border: 1px solid white;
-        height: 160px;
-        width: 160px;
-        border-radius: 100%;
-        justify-self: center;
-    }
-
-
+    
     .name-status h4 {
-        padding-top: 5px;
-        padding-bottom: .5px;
-        font-size: 30px;
+       
+        padding-top: 5%;
+        padding-bottom: .5%;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 100;
+        color: white;
     }
-
+    
     .name-status p {
-        /* background-color: rgba(195,212,223, 0.6); */
+    
         font-size: 15px;
         text-align: center;
         font-weight: 100;
         color: white;
     }
-
+    
     .name-status h5 {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 20px;    
+        font-size: 20px;
+        text-align: center;
+      
+        color: white;
+    }
+    .social-media{
+         display: grid;
+        grid-template-columns: auto;
+        left: 10%;
+    }
+ 
+ .social-media-icon {
+     text-align: right;
+     margin-top: 2%;
+    justify-self: center;
     }
 
-  
-    .display-content {
+    .tech-nar {
+        background-color:rgba(195,212,223, .9);
+        padding: 3%;
+        color: rgb(9, 9, 9);
+        font-size: 18px;
+    }
+    
+    .your-weath, .moovi, .gigem{
+        background-color: rgba(171, 171, 171, 0.8);
+        color: #444;
+        padding: 2%;
         display: grid;
         grid-template-columns: auto;
-    
-        padding: 0px;
-
-    }
-
-    .content-nav {
-       display: grid;
-       grid-template-columns: repeat(4, 1fr);
-       height: 65px;
         
-       
-    }
-    .nav-link {
-        display: inline;
-        margin: 0px;
-        font-size: 20px;
-     }
-    
-     .side-profile{
-         display: inline;
-
-     }
-
-     .social-media-icons {
-         margin-top: 20px;
-     }
-    
-     .res-content h3 {
-        font-size: 25px;
     }
     
-    .res-content h4{
-        font-size: 16px;
-    }
-    .res-content h5 {
-        font-size: 17px;
+    /* .side-profile-content{
+        padding-right: 200px;
+        padding-left:  100px;
     }
 
-     .personal-mes p {
-        background-color:rgba(195,212,223, 0.7);
-        padding: 10px;
-        padding-left: 35px;
-        padding-right: 35px;
-        color: rgb(36, 36, 36);
-        font-size: 20px;
-        text-align: left;
+    .about-me {
+        top: 1%;
+        padding-right: 100px;
+        padding-left: 100px;
     }
 
     .tech-nar{
-        padding: 25px;
-        font-size: 18px;
-    }
-
-    .gigem {
-        display: grid;
-        grid-template-columns: auto;
-
-    }
-    .gif-el{
-        justify-self: center;
-        position:relative;
-        width: 280px;
-        height: 200px;
-    }
+        padding: 0px;
+    } */
  }
 /* End *?
