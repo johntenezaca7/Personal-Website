@@ -19,13 +19,16 @@ h3, h1 {
      background-size: cover;
      background-repeat: no-repeat;
      min-height: 100vh;
-     text-align: center;
+     text-align: left;
+    
     
 }
 
 .profile {
     position: absolute;
     top: 10%;
+    left: 0%;
+    right: 2%;
 }
 
 .name-status h4 {
@@ -291,14 +294,24 @@ justify-self: center;
      body {
         overflow-x: hidden;
         overflow-y: scroll;
-        background-color: black;
+        background-image: url('https://i.pinimg.com/736x/b2/3e/fb/b23efbb4ea3ceb41a1bcaa0f24396873.jpg');
+        background-position: bottom;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
       
      }
+
+     .landing, .between, .profile-content {
+         background-image: initial;
+  
+     }
    
-     .profile-content{
-         position: initial;
-         /* top: 2%;
-         left:20%; */
+     .profile {
+         /* position: relative; */
+         /* top: 2%; */
+         left:0%; 
+         right:0%
      }
     
     .about-me{
@@ -307,7 +320,7 @@ justify-self: center;
     }
     .nav-link {
         display: block;
-        background-color: inherit;
+        background-color:rgba(195,212,223, .3);
         color: white;
         border: none;
         outline: none;
