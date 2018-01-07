@@ -301,6 +301,7 @@ text-shadow: 0px 0px 16px rgba(0,0,0, .8);
   
     display: grid;
     grid-template-columns: auto;
+    /* line-height: 1.9; */
 }
 .res-content h3 {
     text-align: left;
@@ -312,6 +313,7 @@ text-shadow: 0px 0px 16px rgba(0,0,0, .8);
     color: black;
     padding-left: 2%;
     font-size: 24px;
+   
 }
 .res-content h5 {
     padding-left: 2%;
@@ -322,6 +324,11 @@ text-shadow: 0px 0px 16px rgba(0,0,0, .8);
     display: none;
 }
 
+.res-ex-ed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
 /*
  Resume Graph
 */
@@ -449,21 +456,7 @@ text-shadow: 0px 0px 16px rgba(0,0,0, .8);
   .chart--dev .chart__bar:nth-of-type(1) {
     animation-delay: 0.7s;
   }
-  .chart--prod .chart__bar:nth-of-type(2) {
-    animation-delay: 4.2s;
-  }
-  .chart--prod .chart__bar:nth-of-type(1) {
-    animation-delay: 4s;
-  }
-  .chart--design .chart__bar:nth-of-type(3) {
-    animation-delay: 5.6s;
-  }
-  .chart--design .chart__bar:nth-of-type(2) {
-    animation-delay: 5.4s;
-  }
-  .chart--design .chart__bar:nth-of-type(1) {
-    animation-delay: 5.2s;
-  }
+ 
   
   .chart__label {
     padding-left: 10px;
