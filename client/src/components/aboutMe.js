@@ -15,7 +15,7 @@ const AboutMe = () => {
                 software that impacts its users.
                 <br />
                 <br />
-                <span className="contact"> Contact me at: john.tenezaca7@gmail.com</span>
+                Contact me at:  <span className="contact">john.tenezaca7@gmail.com</span>
              </p>
                 <br />
                
