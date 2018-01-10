@@ -42,8 +42,7 @@ const Applications = () => {
                             <h5>Instant Atmospheric Data  aggregator based on cities.</h5>
                             <h4>Tech Stack: <br/> React, Redux, Node/Express, MongoDB/Mongoose </h4>
                             <p>-Implemented React-Sparklines to display data from API.<br />
-                                -Paired Google oAuth with MongoDB to retrieve saved cities from user.<br />     
-                                -Designed React component to always retrieve most recent data from API using Redux.
+                                -Paired Google oAuth with MongoDB to retrieve saved cities from user.<br /> 
                             </p>
                            
                         </div>
