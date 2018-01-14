@@ -69,7 +69,7 @@ class App extends Component {
                   <div className="img-holder">
                     <span></span>
                     <div className="pic-border">
-                      <img className="picture"src="https://firebasestorage.googleapis.com/v0/b/gigem-185b4.appspot.com/o/images%2F928e3b82-fe06-48b3-86b1-db14c255e11d.jpg?alt=media&token=8b745e9a-f3a7-40af-8bae-69a53484ec15" alt="profile" />
+                      <img className="picture"src="https://preview.ibb.co/nsU17R/john_t_final_1024_copy.jpg" alt="profile" />
                     </div>
                     <span></span>
                   </div>

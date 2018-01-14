@@ -7,8 +7,8 @@ const Resume = () => {
             <br />
               <div className="res-content">
                 <div className="res-skills">
-                    <h3>Skills</h3>
-                    <h4>Programing</h4>
+                    <h2>Skills</h2>
+                    <h3>Programing</h3>
                     <div className="for-mobile">
                     <h5>Strong : <br/><span id="tab">JavaScript (ES6)</span>, HTML/CSS, Bootstrap, ReactJS, Redux, NodeJS, ExpressJS, Git, MongoDB, MySQL, Mongoose </h5>
                     <h5>Experienced : <br /> <span id="tab"> Mocha/Jest/Chai</span>,  jQuery, AWS, Socket.io, Firebase, Bookshelf, Knex, PostgresSQL </h5>
@@ -89,18 +89,21 @@ const Resume = () => {
                 </div>
                 <div className="res-ex-ed">
                     <div className="res-ex">
-                        <h3>Experience</h3>
-                            <h4>Crossfire Sound Productions <br /> Brooklyn NY  2015- 2017</h4>			     
-                            <h5>Warehouse Manager</h5>
-                            <h5>Methodized , repaired & prepared rental packages of high-end audio equipment.</h5>
+                        <h2>Experience</h2>
+                            <h3>Crossfire Sound Productions <br /> Brooklyn NY  2015- 2017<br />		     
+                            <h4>Audio Technician/ Warehouse Manager</h4></h3>                             
+                                <h5>On-site production setups and teardowns.<br />
+                                Quality testing and repairing of pro-audio equipment.<br />
+                                Methodized and prepared rental packages of high-end audio equipment.</h5>
+
                     
                     </div>
                     <div className="res-ed">
-                        <h3>Education</h3>
+                        <h2>Education</h2>
                         <div> 
-                            <h4>CUNY City college of Technology</h4>
+                            <h3>CUNY City college of Technology</h3>
                             <h5>Electrical Engineering AS  2015 </h5>
-                            <h4>Hack Reactor</h4> 
+                            <h3>Hack Reactor</h3> 
                             <h5>Advanced  Software Engineering Immersive </h5>
                         </div>
                     </div>

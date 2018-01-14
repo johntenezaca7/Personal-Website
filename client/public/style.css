@@ -14,6 +14,8 @@ h3, h1 {
 ul {
     list-style-type: none;
   }
+
+
 /* Landing -------------------------------------*/
 .landing {
      background-image: url('https://wallpaperstudio10.com/static/wpdb/wallpapers/1920x1080/175813.jpg');
@@ -81,8 +83,9 @@ text-shadow: 0px 0px 16px rgba(0,0,0, .8);
 }
 
 .picture {
-    height: 110px;
-    width:110px;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
     border-radius: 100%;
     justify-self: center;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.9);
@@ -305,22 +308,29 @@ text-shadow: 0px 0px 16px rgba(0,0,0, .8);
     grid-template-columns: auto;
     /* line-height: 1.9; */
 }
+.res-content h2 {
+    text-align: left;
+    color: rgb(47, 45, 45);
+    font-size: 30px;
+}
+
+
 .res-content h3 {
     text-align: left;
     color: rgb(47, 45, 45);
-    font-size: 28px;
+    font-size: 18px;
 }
 
 .res-content h4{
     color: black;
-    padding-left: 1%;
-    font-size: 18px;
+    /* padding-left: 1%; */
+    font-size: 15px;
    
 }
 .res-content h5 {
-    padding-left: 2%;
+    /* padding-left: 2%; */
     color: black;
-    font-size: 15px;
+    font-size: 14px;
 }
 .for-mobile {
     display: none;
